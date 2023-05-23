@@ -5,8 +5,8 @@ using UnityEngine;
 public class explosion : MonoBehaviour
 {
 
-    [SerializeField]
-    
+    [SerializeField] 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,4 +18,6 @@ public class explosion : MonoBehaviour
     {
         
     }
+
+    
 }

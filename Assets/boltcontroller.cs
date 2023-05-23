@@ -30,6 +30,7 @@ public class boltcontroller : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(this.gameObject);
+
         }
     }
 }

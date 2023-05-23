@@ -11,11 +11,16 @@ public class Enemycontroller : MonoBehaviour
     [SerializeField]
     GameObject explosionPrefab;
 
+ 
+    
+
     void Start()
     {
         float x = Random.Range(-12f, 12f);
         Vector2 position = new Vector2(x, 7);
         transform.position = position;
+
+        
     }
 
 
@@ -40,6 +45,8 @@ public class Enemycontroller : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+                
             }
 
         }
@@ -49,6 +56,8 @@ public class Enemycontroller : MonoBehaviour
             Destroy(this.gameObject);
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
+
+        
 
     }
 
